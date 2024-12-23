@@ -6,8 +6,8 @@ const {S3Client,PutObjectCommand} = require('@aws-sdk/client-s3')
 const s3Client = new S3Client({
     region:'ap-south-1',
     credentials:{
-        accessKeyId:'AKIAU6VTTTPDYKKPTRZ3',
-        secretAccessKey:'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'
+        accessKeyId:'',
+        secretAccessKey:''
     }
 })
 
