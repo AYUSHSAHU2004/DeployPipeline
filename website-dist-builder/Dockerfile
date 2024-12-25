@@ -11,12 +11,12 @@ RUN apt-get install git -y
 WORKDIR /home/app
 
 COPY entry.sh entry.sh
-COPY server.js server.js
 COPY package*.json .
+COPY server.js server.js
 
 RUN npm install
 
-RUN chmod +x main.sh
-RUN chmod +x script.js
+RUN chmod +x entry.sh
+RUN chmod +x server.js
 
 ENTRYPOINT [ "/home/app/entry.sh" ]
